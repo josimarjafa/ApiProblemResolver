@@ -1,0 +1,9 @@
+API:
+    token: 4ebdfe098b8442ff84f2a968d02db43b
+    host: https://backend-candidate-homework.lola.co
+    test_token: /token/test
+    problem:
+        part_1: /problem/part_1
+        part_2: /problem/part_2
+mode:
+    sample: "true"

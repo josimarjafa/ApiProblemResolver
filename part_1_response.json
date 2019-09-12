@@ -1,0 +1,83 @@
+{
+    "token": "f32af4ef400e457f9a9046e05939030d",
+    "description": "You are provided a collection of flattened fares, where the legs of each fare are specified as a list of ids. Your problem argument is a Fare id. You are expected to return the total amount of time, in seconds - rounded down, spent in the air for this Fare.",
+    "arguments": {
+        "fare_id": "fare:0"
+    },
+    "expected_return_shape": {
+        "header": {
+            "token": "str"
+        },
+        "data": {
+            "total_seconds": "int"
+        }
+    },
+    "millisecond_time_limit": null,
+    "input": {
+        "fares": [
+            {
+                "id": "fare:0",
+                "legs": [
+                    "leg:0",
+                    "leg:1"
+                ]
+            }
+        ],
+        "legs": [
+            {
+                "id": "leg:0",
+                "airline": {
+                    "code": "AA",
+                    "name": "American Airlines",
+                    "short_name": "American"
+                },
+                "flight_number": "123",
+                "departure_airport": {
+                    "state": "Massachusetts",
+                    "state_code": "MA",
+                    "name": "Boston, Logan International Airport",
+                    "code": "BOS"
+                },
+                "arrival_airport": {
+                    "state": "California",
+                    "state_code": "CA",
+                    "name": "San Francisco International Airport",
+                    "code": "SFO"
+                },
+                "departure_utc": {
+                    "iso": "2018-11-29T07:00:00+00:00"
+                },
+                "arrival_utc": {
+                    "iso": "2018-11-29T13:30:00+00:00"
+                }
+            },
+            {
+                "id": "leg:1",
+                "airline": {
+                    "code": "AA",
+                    "name": "American Airlines",
+                    "short_name": "American"
+                },
+                "flight_number": "123",
+                "departure_airport": {
+                    "state": "California",
+                    "state_code": "CA",
+                    "name": "San Francisco International Airport",
+                    "code": "SFO"
+                },
+                "arrival_airport": {
+                    "state": "Massachusetts",
+                    "state_code": "MA",
+                    "name": "Boston, Logan International Airport",
+                    "code": "BOS"
+                },
+                "departure_utc": {
+                    "iso": "2018-12-01T05:00:00+00:00"
+                },
+                "arrival_utc": {
+                    "iso": "2018-12-01T12:00:00+00:00"
+                }
+            }
+        ]
+    }
+}
